@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ><center>
+        <form action="" onsubmit="fun1()">
+            
+            <center>
+            <h1>Registration Form</h1>
+            Name<input type="text" required placeholder="Your Name Here"><br><br>
+            Gender<input type="radio" name="gender">Male<input type="radio" name="gender">Female<br><br>
+            Email<input type="email" required placeholder="Your Email Here"><br><br>
+            Location
+            <select name="Location">
+                <option value="select">--select--</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+            </select><br><br>
+            Software Knowledge:   <input type="checkbox">word   <input type="checkbox">excel   <input type="checkbox">powerpoint<br><br>
+            Remarks<input type="text"><br><br>
+            <input type="submit"></center>
+         
+    
+         </form></center>
+    </div>
+</body>
+</html>
+<script>
+    function fun1(){
+        alert("Your records are submitted");
+    }
+</script>
+<style>
+    div
+{
+    
+    width: 50%;
+border:2px solid cyan;
+padding:10px 40px; 
+background: greenyellow;
+border-radius:25px;
+box-shadow: 10px 10px 5px #888888;
+}
+</style>
+
