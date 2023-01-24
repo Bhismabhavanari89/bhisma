@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live virtual class</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script>
+        var name = prompt("Enter your Name for Subscribe");
+        var email = prompt("Enter your Email for Subscribe");
+        if (prompt_responce == null){
+            alert("UN");
+        }
+        else if(name!="" && email!=""){
+            alert("Registered successfully");
+        }
+    </script> -->
+    
+</head>
+<body>
+    <header>
+        <!-- <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="./images/102.jpg" style="width:100%; height: 100px;">
+            </div>
+            <div class="mySlides fade">
+            <img src="./images/100.jpeg" style="width:100%; height: 100px;">
+            </div>
+            <div class="mySlides fade">
+            <img src="./images/101.jpeg" style="width:100%; height: 100px;">
+            </div>
+        </div> -->
+        <!-- <div class="centered"><h1 class="animate-charcter">Live Virtual Class</h1></div> -->
+        <!-- <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div> -->
+        <div class="con">
+            <div class="upper">Live Virtual Class</div>
+            <div class="lower">Live Virtual Class</div>
+            <div class="inside" >Hello everyone</div>
+        </div>
+      
+    </header>
+    <div class="color"></div>
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./home.html" target="iframe1">Home</a></li>
+                <li ><a style="font-size: 20px;" href="./courses.html" target="iframe1">Courses</a></li>
+                <li ><a style="font-size: 20px;" href="registration.html" target="iframe1">Registration</a></li>
+                <li ><a style="font-size: 20px;" href="./gallery.html" target="iframe1">Photo Gallery</a></li>
+                <li><a style="font-size: 20px;" href="./blog.html" target="iframe1">Blog</a></li>
+                <li><a style="font-size: 20px;" href="contact.html" target="iframe1">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section style="height: 60vh; " >
+        
+        <iframe style="height: 100%; width: 100%;" src="home.html" name="iframe1" frameborder="0"></iframe>
+        
+    </section>
+    
+    
+    <article class="all-browsers">
+        <h1>References</h1>
+        <article class="browser">
+          <h2><a href="">Udemy</a></h2>
+          <p>Udemy is an online learning and teaching marketplace with over 213000 courses and 57 million students. Learn programming, marketing, data science and more.</p>
+        </article>
+        <article class="browser">
+          <h2><a href="">Greeks for Greeks</a></h2>
+          <p>
+            The platform was founded in 2009 by Sandeep Jain (an IIT Roorkee alumnus) as a one-stop solution for CS/IT students to learn Programming Concepts, Data Structures & Algorithms, Coding Practice, etc.</p>
+        </article>
+        <article class="browser">
+          <h2><a href="">Coursera</a></h2>
+          <p>Coursera is a global online learning platform that offers anyone, anywhere, access to online courses and degrees from leading universities and companies</p>
+        </article>
+      </article>
+    <center>
+    <footer >
+        
+        © All rights reserved
+        <h3>B.V.P.S.Bhisma Rao</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+    </footer></center>
+</body>
+</html>
+<script>
+    function lo(){
+        var name = prompt("Enter your Name for Subscribe");
+        var email = prompt("Enter your Email for Subscribe");
+        if(name!="" && email!=""){
+            alert("Registered Successfully");
+        }
+    }
+    function myFunction() {
+  location.replace("courses.html")
+}
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    
+</script>
+<style>
+    
+       *,
+      :before,
+      :after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cyan;
+      }
+
+      .con {
+        width: 100%;
+        height: 1.15em;
+        font-size: 4rem;
+        font-family: sans-serif;
+        position: relative;
+      }
+
+      .con div {
+        position: absolute;
+        left: 0;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+        text-align:center;
+      }
+
+      .upper {
+        top: 0;
+        height: 52.5%;
+        color: black;
+        overflow: hidden;
+        z-index: 3;
+        animation: moveUp 1.5s ease-in-out 1;
+        background-color: cyan;
+        
+      }
+
+      .lower {
+        bottom: 0;
+        height: 100%;
+        background: linear-gradient(180deg, cyan 52.5%, black 52.5%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        z-index: 1;
+        animation: moveDown 1.5s ease-in-out 1;
+      }
+
+      .inside {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-40%);
+        text-align: center;
+        z-index: 2;
+        font-size: 1rem;
+        color: #dc143c;
+      }
+
+      @keyframes moveUp {
+        0%,
+        100% {
+          top: 0;
+        }
+
+        50%,
+        70% {
+          top: -45px;
+        }
+      }
+
+      @keyframes moveDown {
+        0%,
+        100% {
+          top: 0;
+        }
+
+        50%,
+        70% {
+          top: 30px;
+        }
+      }
+
+      @media (max-width: 424px) {
+        .con {
+          font-size: 2.5rem;
+          
+        }
+
+        .inside {
+          font-size: 0.75rem;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .con {
+          font-size: 2rem;
+          
+        }
+
+        .inside {
+          font-size: 0.5rem;
+        }
+      }
+</style>

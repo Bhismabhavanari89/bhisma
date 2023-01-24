@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/reg.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <div  class="fo">
+                <form action="" name="fim" >
+                    
+                    <center>
+                    <h1>Registration Form</h1>
+                    Name<input name="nm" type="text" placeholder="Your Name Here"><br><br>
+                    Gender<input type="radio" name="gender">Male<input type="radio" name="gender">Female<br><br>
+                    Email<input name="em" onclick="mynum()" type="email" placeholder="Your Email Here"><br><br>
+                    Course Required
+                    <select name="Location" id="per">
+                        <option value="select">--select--</option>
+                        <option value="mean">MEAN</option>
+                        <option value="mern">MERN</option>
+                        <option value="devops">DEVOPS</option>
+                    </select>
+                   <br><br>
+                    Remarks<textarea  onclick="myemail()"  name="ot" type="text"></textarea><br><br>
+                    
+                    <input onclick="myall()" type="button" value="Submit">
+                    
+                </center>
+            
+                 </form>
+                 
+            </div>
+        </div>
+        <div class="col"><img src="./images/registration.jpeg" alt="" style="width: 82%;"></div>
+      </div>
+    
+    
+</body>
+</html>
+<script>
+    
+</script>
+<style>
+.fo
+{
+    
+    width: 100%;
+border:2px solid cyan;
+padding:10px 40px; 
+background: greenyellow;
+border-radius:25px;
+box-shadow: 10px 10px 5px #888888;
+}
+</style>
+
